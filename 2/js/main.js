@@ -10,8 +10,9 @@ function getRandomInt(min, max) {
 
 getRandomInt();
 
-function checkStringLength (str, max) {
-  return str.length >= max;
+function checkStringLength (value, max) {
+  value = String(value);
+  return value.length <= max ;
 }
 
 checkStringLength();
